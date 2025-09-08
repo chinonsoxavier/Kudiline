@@ -6,6 +6,7 @@ import Phone1 from "../../assets/images/phone-1.png";
 import Phone2 from "../../assets/images/phone-2.png";
 import Phone3 from "../../assets/images/phone-3.png";
 import Phone4 from "../../assets/images/phone-4.png";
+import lightening from "../../assets/icons/Lightning.svg"
 const HeroComponent = () => {
   return (
     <div
@@ -17,19 +18,13 @@ const HeroComponent = () => {
       }}
     >
       <Header />
-
+      <div className="w-full px-8">
+        
+      </div>
       <div className="flex px-8 gap-12 relative max_width items-start justify-center">
         <div className="flex gap-5 flex-col items-start flex-1 justify-center">
           <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 test py-1 px-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="#007e70"
-              viewBox="0 0 256 256"
-            >
-              <path d="M213.85,125.46l-112,120a8,8,0,0,1-13.69-7l14.66-73.33L45.19,143.49a8,8,0,0,1-3-13l112-120a8,8,0,0,1,13.69,7L153.18,90.9l57.63,21.61a8,8,0,0,1,3,12.95Z"></path>
-            </svg>
+          <img src={lightening} alt="lightening" />
             <p className="text-lg font-semibold">Instant setup with KudiCall</p>
           </div>
           <p className="text-[55px] leading-15 tracking-tight font-bold">
@@ -67,7 +62,7 @@ const HeroComponent = () => {
               Try KudiCall
             </Button>
 
-            <Button className="h-20" >Get a Call</Button>
+            <Button className="h-20" >Get a Number</Button>
           </div>
         </div>
         <div className="flex-1 h-full center flex-col max-w-[624px] relative">
