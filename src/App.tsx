@@ -1,12 +1,13 @@
-
-import './App.css'
-
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import LandingPage from "./pages/landing_page";
 function App() {
   return (
-    <div className='text-4xl font-bold text-green-500 text-center mt-20'>
-      <h1>Welcome to Kudiline!</h1>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
