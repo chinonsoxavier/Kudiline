@@ -10,9 +10,11 @@ export default {
         primary: '#151515',
         secondary: '#1E40AF',
       },
+      
            fontFamily: {
         pacifico: ['Pacifico', 'cursive'],
-      }
+           },
+           
     },
   },
   plugins: [],

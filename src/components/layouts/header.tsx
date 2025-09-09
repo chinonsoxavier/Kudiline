@@ -1,7 +1,6 @@
-import { Download } from "lucide-react";
 import Logo from "../../assets/images/logo.png";
 import { Button } from "../ui/button";
-
+import arrowDown from "../../assets/icons/arrow-down-icon.svg"
 const Header = () => {
   return (
     <div className=" h-44.5 center w-full">
@@ -24,7 +23,7 @@ const Header = () => {
 
           <div className="center">
             <Button value="outline"  className="w-full rounded-full" >
-               Download KudiCall App <Download/>
+              Download KudiCall App <img src={arrowDown}  alt="arrow down icon" className=""/>
             </Button>
           </div>
         </div>
