@@ -20,12 +20,13 @@ const HeroComponent = () => {
       <Header />
 
       <div className="flex max_width px-6 md:px-12 gap-16 items-center justify-between">
-        <div className="flex gap-5 flex-col items-start flex-1 justify-center">
+        <div className="flex gap-5 flex-col items-start flex-1 justify-center ">
           <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 test py-1 px-4">
             <img src={lightening} alt="lightening" />
             <p className="text-lg font-semibold">Instant setup with KudiCall</p>
           </div>
-          <p className="text-[55px] leading-15 tracking-tight font-bold">
+
+          <p className="text-[53px] leading-15 tracking-tight font-bold">
             Own a Business Phone Number That Works Online,
             <br />
             <span className="pacifico tra tracking-tight text-primary">

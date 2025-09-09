@@ -12,7 +12,7 @@ const LandingPage = () => {
         <HeroComponent />
       </section>
 
-      <section className="py-12">
+      <section className="py-24">
         <WhyUseUs />
       </section>
 
