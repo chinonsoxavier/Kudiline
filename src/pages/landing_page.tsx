@@ -27,11 +27,7 @@ const LandingPage = () => {
       <section className="py-12">
         <HowItWorks />
       </section>
-
-      <section className="py-12">
-        <HowItWorks />
-      </section>
-
+      
       <section className="py-12">
         <Features />
       </section>

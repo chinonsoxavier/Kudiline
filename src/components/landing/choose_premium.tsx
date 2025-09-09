@@ -21,14 +21,24 @@ const ChoosePremium = () => {
         or both.
       </p>
 
-      <div className="flex w-full gap-5 my-6 items-center flex-wrap justify-center">
-        <img src={KudilineFrame1} alt="kudiline frame 1" className="flex-1 w-full" />
-        <img src={KudilineFrame2} alt="kudiline frame 2" className="flex-1 w-full" />
-          </div>
-          
-          <Button className="max-w-80" >Browse Premium Numbers</Button>
+     {/* Image Grid */}
+     <div className="flex flex-wrap md:flex-nowrap w-full gap-5 my-6 justify-center">
+        <img
+          src={KudilineFrame1}
+          alt="kudiline frame 1"
+          className="w-full md:w-1/2 object-contain"
+        />
+        <img
+          src={KudilineFrame2}
+          alt="kudiline frame 2"
+          className="w-full md:w-1/2 object-contain"
+        />
+      </div>
+
+
+      <Button className="max-w-80">Browse Premium Numbers</Button>
     </div>
   );
-}
+};
 
-export default ChoosePremium
+export default ChoosePremium;

@@ -6,7 +6,7 @@ import Phone1 from "../../assets/images/phone-1.png";
 import Phone2 from "../../assets/images/phone-2.png";
 import Phone3 from "../../assets/images/phone-3.png";
 import Phone4 from "../../assets/images/phone-4.png";
-import lightening from "../../assets/icons/lightening-icon.svg"
+import lightening from "../../assets/icons/lightening-icon.svg";
 const HeroComponent = () => {
   return (
     <div
@@ -19,10 +19,10 @@ const HeroComponent = () => {
     >
       <Header />
 
-      <div className="flex px-8 gap-24 relative max_width items-start justify-center">
+      <div className="flex max_width px-6 md:px-12 gap-16 items-center justify-between">
         <div className="flex gap-5 flex-col items-start flex-1 justify-center">
           <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 test py-1 px-4">
-          <img src={lightening} alt="lightening" />
+            <img src={lightening} alt="lightening" />
             <p className="text-lg font-semibold">Instant setup with KudiCall</p>
           </div>
           <p className="text-[55px] leading-15 tracking-tight font-bold">
@@ -60,9 +60,10 @@ const HeroComponent = () => {
               Try KudiCall
             </Button>
 
-            <Button className="h-20" >Get a Number</Button>
+            <Button className="h-20">Get a Number</Button>
           </div>
         </div>
+
         <div className="flex-1 h-full center flex-col max-w-[624px] relative">
           <div className="flex relative right-30 items-start">
             <img
