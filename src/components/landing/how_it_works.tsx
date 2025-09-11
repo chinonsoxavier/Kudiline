@@ -5,14 +5,14 @@ import { Button } from "../ui/button";
 const HowItWorks = () => {
   const steps = [
     {
-        desc: "Search and select the perfect number for your business.",
-        iconColor: "#006C60",
-        boxColor: "#66D2C6",
-        icon: searchIcon,
-        title: "Pick a Phone Number",
+      desc: "Search and select the perfect number for your business.",
+      iconColor: "#006C60",
+      boxColor: "#66D2C6",
+      icon: searchIcon,
+      title: "Pick a Phone Number",
     },
     {
-        title: "Link to Your KudiCall Profile",
+      title: "Link to Your KudiCall Profile",
       desc: "Connect it instantly, no SIM card needed.",
       icon: noConnection,
       iconColor: "#107AE3",
@@ -21,8 +21,8 @@ const HowItWorks = () => {
   ];
   return (
     <div className="center gap-4 flex-col max_width">
-      <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 test py-1 px-4">
-        <img src={bookIcon} alt="question icon" />
+      <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
+        <img src={bookIcon} alt="how it works icon" />
         <p className="text-lg font-semibold">How It Works?</p>
       </div>
 
@@ -49,12 +49,12 @@ const HowItWorks = () => {
             </div>
 
             <div className="flex relative py-4 items-start justify-between">
-              <div className="h-full" >
+              <div className="h-full">
                 <p className="text-[32px] font-semibold leading-10">
                   {step.title}
                 </p>
 
-                <p className="text-2xl text-foreground" >{step.desc}</p>
+                <p className="text-2xl text-foreground">{step.desc}</p>
               </div>
 
               <img
@@ -65,8 +65,8 @@ const HowItWorks = () => {
             </div>
           </div>
         ))}
-          </div>
-          <Button className="max-w-[525px] mt-8" >Get Premium Number</Button>
+      </div>
+      <Button className="max-w-[525px] mt-8">Get Premium Number</Button>
     </div>
   );
 };

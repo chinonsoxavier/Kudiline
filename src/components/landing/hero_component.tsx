@@ -7,7 +7,11 @@ import Phone2 from "../../assets/images/phone-2.png";
 import Phone3 from "../../assets/images/phone-3.png";
 import Phone4 from "../../assets/images/phone-4.png";
 import lightening from "../../assets/icons/lightening-icon.svg";
+import { useNavigate } from "react-router-dom";
 const HeroComponent = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div
       className="w-full"
@@ -17,11 +21,13 @@ const HeroComponent = () => {
         backgroundSize: "cover",
       }}
     >
+      <div className="max_width" >
       <Header />
+      </div>
 
       <div className="flex max_width px-6 md:px-12 gap-16 items-center justify-between">
         <div className="flex gap-5 flex-col items-start flex-1 justify-center ">
-          <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 test py-1 px-4">
+          <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
             <img src={lightening} alt="lightening" />
             <p className="text-lg font-semibold">Instant setup with KudiCall</p>
           </div>
@@ -57,11 +63,17 @@ const HeroComponent = () => {
             </div>
           </div>
           <div className="flex gap-10 items-center h-full w-full justify-between">
-            <Button className="max-w-xs h-20" variant="secondary">
+            <Button
+              onClick={() => navigate("/how-it-works")}
+              className="max-w-xs h-20"
+              variant="secondary"
+            >
               Try KudiCall
             </Button>
 
-            <Button className="h-20">Get a Number</Button>
+            <Button onClick={() => navigate("/pricing")} className="h-20">
+              Get a Number
+            </Button>
           </div>
         </div>
 

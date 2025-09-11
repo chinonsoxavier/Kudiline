@@ -9,8 +9,8 @@ import { Button } from "../ui/button";
 const Features = () => {
   return (
     <div className="center gap-4 flex-col max_width">
-      <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 test py-1 px-4">
-        <img src={appIcon} alt="question icon" />
+      <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
+        <img src={appIcon} alt="features icon" />
         <p className="text-lg font-semibold">Features Breakdown?</p>
       </div>
 

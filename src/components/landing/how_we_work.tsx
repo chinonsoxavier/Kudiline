@@ -7,8 +7,8 @@ import caseStudyImage from "@/assets/images/case-study.png";
 const HowWeWork = () => {
   return (
     <div className="center flex-col gap-4 max_width">
-      <div className="center gap-2 rounded-full border-[0.5px] border-primary/5 test py-1 px-4">
-        <img src={bagIcon} alt="question icon" />
+      <div className="center gap-2 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
+        <img src={bagIcon} alt="how we work icon" />
         <p className="text-lg font-semibold">KudiLine Works the Way You Work</p>
       </div>
       <p className="text-[45px] leading-[100%] tracking-tight font-bold">
@@ -20,7 +20,7 @@ const HowWeWork = () => {
         line to more sales, happier customers, and smoother operations.
       </p>
 
-      <div className="py-5" >
+      <div className="py-5">
         <div>
           <img src={girlImage} alt="image of a girl" className="" />
         </div>
@@ -60,7 +60,7 @@ const HowWeWork = () => {
 
             <div
               style={{
-                              background: `linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(${girlAndBoyImage})`,
+                background: `linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(${girlAndBoyImage})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
               }}

@@ -6,8 +6,8 @@ import { Button } from "../ui/button";
 const ChoosePremium = () => {
   return (
     <div className="center gap-2 flex-col max_width">
-      <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 test py-1 px-4">
-        <img src={landLineColored} alt="question icon" />
+      <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
+        <img src={landLineColored} alt="choose premium icon" />
         <p className="text-lg font-semibold">Choose a Premium Number</p>
       </div>
 
@@ -21,8 +21,8 @@ const ChoosePremium = () => {
         or both.
       </p>
 
-     {/* Image Grid */}
-     <div className="flex flex-wrap md:flex-nowrap w-full gap-5 my-6 justify-center">
+      {/* Image Grid */}
+      <div className="flex flex-wrap md:flex-nowrap w-full gap-5 my-6 justify-center">
         <img
           src={KudilineFrame1}
           alt="kudiline frame 1"
@@ -34,7 +34,6 @@ const ChoosePremium = () => {
           className="w-full md:w-1/2 object-contain"
         />
       </div>
-
 
       <Button className="max-w-80">Browse Premium Numbers</Button>
     </div>

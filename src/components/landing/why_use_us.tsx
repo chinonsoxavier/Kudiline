@@ -42,7 +42,7 @@ const WhyUseUs = () => {
 
   return (
     <div className="center gap-4 flex-col max_width">
-      <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 test py-1 px-4">
+      <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
         <img src={questionIcon} alt="question icon" />
         <p className="text-lg font-semibold">Why KudiLine?</p>
       </div>
