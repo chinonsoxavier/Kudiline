@@ -13,7 +13,7 @@ import SideMenu from "@/components/layouts/sidemenu";
 const LandingPage = () => {
   
   return (
-    <div className="text-white relative bg-background">
+    <div className="text-white relative bg-background overflow-hidden">
 
     <SideMenu/>     
 

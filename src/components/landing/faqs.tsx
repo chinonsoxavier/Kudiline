@@ -5,7 +5,23 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { motion } from "framer-motion";
+
 const Faqs = () => {
+
+    const variant = {
+      inactive: {
+        y: 50,
+        opacity: 0,
+      },
+      active: {
+        y: 0, // Fixed to match y property
+        opacity: 1,
+        transition: { duration: 1.5 },
+      },
+    };
+
+
   const faqs = [
     {
       label: "What is Kudiline and how does it work?",
@@ -46,35 +62,62 @@ const Faqs = () => {
   ];
   return (
     <div className="center gap-4 flex-col max_width">
+     
+        <motion.div
+        variants={variant}
+        initial="inactive"
+        whileInView={"active"}
+        viewport={{ once: true }}
+      >
+
       <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
         <img src={faqIcon} alt="faq icon" />
-        <p className="text-lg font-semibold">FAQ</p>
+        <p className="md:text-lg text-sm font-semibold">FAQ</p>
       </div>
+      </motion.div>
 
-      <p className="text-[45px] leading-[100%] tracking-tight font-bold">
+   <motion.div
+        variants={variant}
+        initial="inactive"
+        whileInView={"active"}
+        viewport={{ once: true }}
+        className="space-y-4"
+      >
+
+      <p className="md:text-[45px] text-center text-[26px] text leading-[100%] tracking-tight font-bold">
         Got questions? We’ve got answers.
       </p>
-      <p className="text-xl text-[#C8C8C8] text-center max-w-5xl">
+      <p className="md:text-xl text-[#C8C8C8] text-center max-w-5xl">
         Here are some of the most common things people ask about Kudiline. If
         you don’t see your question here, feel free to reach out to our support
         team.
       </p>
+      </motion.div>
 
       <div className="flex items-stretch w-full mt-5 gap-3 flex-wrap justify-evenly">
         {faqs.map((faq, index) => (
+             <motion.div
+        variants={variant}
+        initial="inactive"
+        whileInView={"active"}
+        viewport={{ once: true }}
+        className="w-full"
+      >
+
           <Accordion key={index} type="multiple" className="w-full">
             <AccordionItem
               value={`item-${index}`}
               className="w-full border-[#909090]"
-            >
-              <AccordionTrigger className="py-4 text-[28px] font-bold text-left w-full flex justify-between items-center">
+              >
+              <AccordionTrigger className="py-4 md:text-[28px] text-base font-bold text-left w-full flex justify-between items-center">
                 {faq.label}
               </AccordionTrigger>
-              <AccordionContent className="pb-4 text-[22px] font-semibold text-secondary-foreground">
+              <AccordionContent className="pb-4 md:text-[22px] text-sm font-semibold text-secondary-foreground">
                 {faq.content || "Answer coming soon..."}
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+              </motion.div>
         ))}
       </div>
     </div>

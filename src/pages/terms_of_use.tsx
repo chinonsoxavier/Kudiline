@@ -1,6 +1,7 @@
 import BackgroundImage from "@/assets/images/Background pattern.png";
 import Footer from "@/components/layouts/footer";
 import Header from "@/components/layouts/header";
+import SideMenu from "@/components/layouts/sidemenu";
 
 const TermsOfUse = () => {
   const terms = [
@@ -79,7 +80,7 @@ const TermsOfUse = () => {
   ];
 
   return (
-    <div className="text-[#FFFFFF] bg-background">
+    <div className="text-[#FFFFFF] bg-background relative">
       <section>
         <div
           style={{
@@ -89,41 +90,42 @@ const TermsOfUse = () => {
           }}
         >
           <Header />
+          <SideMenu/>
           <div className="center py-16 gap-6 flex-col max_width">
-            <p className="text-[45px] leading-[100%] tracking-tight font-bold">
+            <p className="md:text-[45px] text-[26px] text leading-[100%] tracking-tight font-bold">
               Terms of
               <span className="pacifico font-normal text-primary"> Use </span>
               Works
             </p>
 
-            <p className="text-xl text-[#C8C8C8] text-center max-w-xl">
+            <p className="md:text-xl text-[#C8C8C8] text-center max-w-xl">
               Welcome to Kudiline. By accessing or using our platform, you agree
               to comply with and be bound by these Terms of Use. Please read
               them carefully before using our services.
             </p>
 
             <div className="space-y-6">
-              <p className="font-medium text-[26px]">
+              <p className="font-medium text-base md:text-[26px]">
                 These Terms of Use outline the rules and guidelines for using
                 Kudiline’s services. By accessing or using our platform, you
                 agree to comply with these terms, ensuring a safe, fair, and
                 transparent experience for all users.
               </p>
 
-              <p className="text-[26px] text-primary-foreground">
-                Last revised: 2025-05-29{" "}
+              <p className="md:text-[26px] text-primary-foreground">
+                Last revised: 2025-05-29
               </p>
               <div className="space-y-4">
                 {terms.map((term, index) => (
                   <div key={index} className="">
-                    <span className="text-[32px] mb-0 py-0 font-semibold">
+                    <span className="md:text-[32px] text-2xl mb-0 py-0 font-semibold">
                       {index + 1}. {term.title}
                     </span>
 
                     {term.details.map((details, index) => (
-                      <div key={index} className="flex gap-1 items-start" >
-                          <div className="w-1.5 h-1.5 mt-4 rounded-full bg-white"></div>
-                        <p className="text-[26px] mt-0 text-primary-foreground font-semibold">
+                      <div key={index} className="flex gap-1 items-start">
+                        <div className="w-1.5 h-1.5 mt-4 rounded-full bg-white"></div>
+                        <p className="md:text-[26px] text-xl mt-0 text-primary-foreground font-semibold">
                           {details}
                         </p>
                       </div>

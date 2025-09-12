@@ -129,7 +129,7 @@ html{
 }
 
 .max_width{
-    @apply w-full max-w-[1412px] mx-auto px-8
+    @apply w-full max-w-[1412px] mx-auto px-4
 }
 
 .pulse{
@@ -146,9 +146,11 @@ html{
 @theme {
   --breakpoint-large: 1180px;
   --breakpoint-xlarge: 1080px;
-  --breakpoint-medium: 950px;
+  --breakpoint-special: 1059px;
+  --breakpoint-medium: 985px;
   --breakpoint-smedium: 880px;
   --breakpoint-xs: 470px;
+  --breakpoint-xxs: 340px;
 }
 
 @keyframes Ipulse {

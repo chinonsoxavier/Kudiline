@@ -8,7 +8,7 @@ import TermsOfUse from "./pages/terms_of_use";
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
+      <Routes  >
         <Route path="/" element={<LandingPage />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact-us" element={<ContactUs />} />
