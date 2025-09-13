@@ -87,7 +87,7 @@ const PrivacyPolicy = () => {
         >
           <Header />
           <SideMenu/>
-          <div className="center py-16 gap-6 flex-col max_width">
+          <div className="center py-16 gap-6 flex-col ">
             <p className="md:text-[45px] text-[26px] text leading-[100%] tracking-tight font-bold">
               Privacy
               <span className="pacifico font-normal text-primary"> Use </span>

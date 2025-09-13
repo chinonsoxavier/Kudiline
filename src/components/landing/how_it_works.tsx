@@ -65,7 +65,7 @@ const HowItWorks = () => {
         </p>
       </motion.div>
 
-      <div className="grid  grid-cols-[repeat(auto-fill,minmax(430px,1fr))] text-[#0E0E0E] flex-col md:flex-row items-stretch w-full gap-8 flex-wrap justify-end">
+      <div className="grid grid-cols-1 medium:grid-cols-2 text-[#0E0E0E] flex-col md:flex-row items-stretch w-full gap-8 flex-wrap justify-end">
         {steps.map((step, index) => (
           <motion.div
             className="rounded-[30px] w-full p-6 h-full flex-1"
@@ -83,8 +83,8 @@ const HowItWorks = () => {
             </div>
 
             <div className="flex relative py-4 items-start justify-between">
-              <div className="h-full">
-                <p className="sm:text-[32px] text-xl font-semibold leading-10">
+              <div className="h-full space-y-2">
+                <p className="sm:text-[32px] text-xl font-semibold leading-full">
                   {step.title}
                 </p>
 

@@ -30,7 +30,7 @@ const ContactUsForm = () => {
         >
             <Label htmlFor="first-name">First Name</Label>
             <Input
-              className="mt-2 border-[#282828] rounded-xl flex items-start justify-start pb-22 border pt-8 bg-foreground"
+              className="mt-2 border-[#282828] rounded-xl flex items-start justify-start md:pb-22 pb-12 border pt-8 bg-foreground"
               type="text"
               id="first-name"
               placeholder="Enter first name"
@@ -45,7 +45,7 @@ const ContactUsForm = () => {
         >
           <Label htmlFor="last-name">Last Name</Label>
           <Input
-            className="mt-2 border-[#282828] rounded-xl flex items-start justify-start pb-22 border pt-8 bg-foreground"
+            className="mt-2 border-[#282828] rounded-xl flex items-start justify-start md:pb-22 pb-12 border pt-8 bg-foreground"
             type="text"
             id="last-name"
             placeholder="Enter last name"
@@ -60,7 +60,7 @@ const ContactUsForm = () => {
         >
           <Label htmlFor="email">Email Address</Label>
           <Input
-            className="mt-2 border-[#282828] rounded-xl flex items-start justify-start pb-22 border pt-8 bg-foreground"
+            className="mt-2 border-[#282828] rounded-xl flex items-start justify-start md:pb-22 pb-12 border pt-8 bg-foreground"
             type="email"
             id="email"
             placeholder="Enter Email Address"
@@ -76,7 +76,7 @@ const ContactUsForm = () => {
         >
           <Label htmlFor="subject">Subject</Label>
           <Input
-            className="mt-2 border-[#282828] rounded-xl flex items-start justify-start pb-22 border pt-8 bg-foreground"
+            className="mt-2 border-[#282828] rounded-xl flex items-start justify-start md:pb-22 pb-12 border pt-8 bg-foreground"
             type="text"
             id="subject"
             placeholder="Enter email address"

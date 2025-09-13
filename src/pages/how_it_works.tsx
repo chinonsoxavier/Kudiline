@@ -6,8 +6,8 @@ import SideMenu from "@/components/layouts/sidemenu";
 
 const HowItWorks = () => {
     return (
-      <div className="text-white bg-background">
-        <section>
+      <div className="text-white bg-background max_width">
+        <section className="" >
           <SideMenu/>
           <HeroSection />
         </section>
@@ -16,7 +16,7 @@ const HowItWorks = () => {
           <Steps />
         </section>
 
-        <section className="md:py-24 py-12">
+        <section className="md:py-24  py-12">
           <GetKudiline />
         </section>
 

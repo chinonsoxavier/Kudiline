@@ -5,7 +5,7 @@ import xicon from "../../assets/icons/x-icon.svg";
 import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className="border-t max_width mt-10 text-[#FFFFFF] border-[#FFFFFF33]">
+    <div className="border-t mt-10 text-[#FFFFFF] border-[#FFFFFF33]">
       <div className="flex max_width flex-wrap gap-5 mx-auto md:py-10 py-6 items-center justify-between border-[#FFFFFF33] border-b">
         <img
           src={logo}

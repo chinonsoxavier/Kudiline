@@ -61,7 +61,7 @@ const Features = () => {
           initial="inactive"
           whileInView={"active"}
           viewport={{ once: true }}
-          className="bg-foreground flex items-center justify-between flex-col border space-y-8 border-[#282828] px-5 pt-5 rounded md:row-span-2"
+          className="bg-foreground flex items-center justify-between flex-col border space-y-8 border-[#282828] px-3 pt-3 rounded md:row-span-2"
         >
           <div className="space-y-3">
             <p className="font-semibold text-xl md:text-[36px] leading-full">
@@ -85,9 +85,9 @@ const Features = () => {
           initial="inactive"
           whileInView={"active"}
           viewport={{ once: true }}
-          className="bg-foreground medium:flex-row flex-col border flex items-start md:items-end justify-between border-[#282828] px-5 pt-5 rounded md:col-span-2"
+          className="bg-foreground medium:flex-row flex-col border flex items-start md:items-end justify-between border-[#282828] px-3 pt-3 rounded md:col-span-2"
         >
-          <div className="py-6 space-y-4">
+          <div className="space-y-4 pb-5">
             <p className="font-semibold text-xl md:text-[36px] leading-full">
               Shared Access
             </p>
@@ -107,9 +107,9 @@ const Features = () => {
           initial="inactive"
           whileInView={"active"}
           viewport={{ once: true }}
-          className="bg-foreground border border-[#282828] px-5 pt-5 rounded"
+          className="bg-foreground border border-[#282828] px-3 pt-3 rounded"
         >
-          <div className="py-6 space-y-4">
+          <div className="space-y-4 p-5">
             <p className="font-semibold text-xl md:text-[36px] leading-full">
               Call Reports
             </p>
@@ -117,18 +117,22 @@ const Features = () => {
               See who’s calling, when, and why.
             </p>
           </div>
+          
+          <div className="flex justify-end items-end">
+
           <img
             src={callReports}
             alt="call reports vector image"
             className="w-full max-w-[160px]"
-          />
+            />
+            </div>
         </motion.div>
         <motion.div
           variants={variants}
           initial="inactive"
           whileInView={"active"}
           viewport={{ once: true }}
-          className="bg-foreground border border-[#282828] px-5 pt-5 rounded"
+          className="bg-foreground border border-[#282828] px-3 pt-3 rounded"
         >
           <div className="w-full flex items-center justify-end">
             <img
@@ -153,8 +157,8 @@ const Features = () => {
           viewport={{ once: true }}
           className="grid grid-cols-1 medium:grid-cols-2 md:row-span-3 md:col-span-3 gap-5 w-full"
         >
-          <div className="bg-foreground large:flex-row flex-col border flex items-start md:items-end justify-between border-[#282828] px-5 pt-5 rounded col-span-">
-            <div className="py-6 space-y-4">
+          <div className="bg-foreground  border flex items-start justify-between border-[#282828] px-3 pt-3 rounded">
+            <div className=" space-y-4 pb-5">
               <p className="font-semibold text-xl md:text-[36px] leading-full">
                 AI Call Assistant
               </p>
@@ -169,7 +173,7 @@ const Features = () => {
               className="w-full object-contain max-w-[240px] md:max-w-[325px]"
             />
           </div>
-          <div className="bg-foreground gap-10 medium:gap-0 flex-col md:flex-row flex border border-[#282828] px-5 pt-5 rounded w-full">
+          <div className="bg-foreground gap-10 medium:gap-0 flex-col md:flex-row flex border border-[#282828] px-3 pt-3 rounded w-full">
             <div className="py-6 space-y-4">
               <p className="font-semibold whitespace-nowraptext-xl md:text-[36px]  leading-full">
                 Order Tracking
@@ -178,11 +182,13 @@ const Features = () => {
                 Sync your calls with deliveries (via KudiCall)
               </p>
             </div>
+            <div className="flex md:items-start md:justify-start w-full items-start justify-center">
             <img
               src={trackerImage}
               alt="call reports vector image"
               className="w-full object-contain max-w-[163px]"
-            />
+              />
+              </div>
           </div>
         </motion.div>
       </div>

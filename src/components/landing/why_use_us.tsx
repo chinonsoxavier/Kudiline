@@ -10,11 +10,11 @@ import { motion } from "framer-motion";
 const WhyUseUs = () => {
     const variants1 = {
       inactive: {
-        x: -50,
+        y: 50,
         opacity: 0,
       },
       active: {
-        x: 0, // Fixed to match y property
+        y: 0,
         opacity: 1,
         transition: { duration: 1.5 },
       },

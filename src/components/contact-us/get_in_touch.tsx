@@ -37,7 +37,7 @@ const GetInTouch = () => {
         viewport={{ once: true }}
         className="space-y-4"
       >
-        <p className="md:text-[45px] text-[26px] text leading-[100%] tracking-tight font-bold">
+        <p className="md:text-[45px] text-[26px] text leading-[100%] tracking-tight font-bold text-center">
           Get In Touch With Us Directly
         </p>
         <p className="md:text-xl text-[#C8C8C8] text-center max-w-5xl">
@@ -46,13 +46,13 @@ const GetInTouch = () => {
         </p>
       </motion.div>
 
-      <div className="flex items-center mt-8 w-full gap-8 flex-wrap ">
+      <div className="flex items-center mt-8 w-full gap-4 md:gap-8 flex-wrap ">
         <motion.div
           variants={variant}
           initial="inactive"
           whileInView={"active"}
           viewport={{ once: true }}
-          className="md:gap-8 gap-5 md:p-10 p-6 bg-[#292929] rounded flex items-start justify-between flex-col flex-1"
+          className="md:gap-8 gap-4 md:p-10 p-6 bg-[#292929] rounded flex items-start justify-between flex-col flex-1 w-full"
         >
             <div className="center rounded-full bg-background md:w-17.5 md:h-17.5 w-10 h-10 p-1">
               <img
@@ -75,7 +75,7 @@ const GetInTouch = () => {
           initial="inactive"
           whileInView={"active"}
           viewport={{ once: true }}
-          className="md:gap-8 gap-5 md:p-10 p-6 bg-[#292929] rounded flex items-start justify-between flex-col flex-1"
+          className="md:gap-8 gap-4 md:p-10 p-6 bg-[#292929] rounded flex items-start justify-between flex-col flex-1 w-full"
         >
           <div className="center rounded-full bg-background md:w-17.5 md:h-17.5 w-10 h-10 p-1">
             <img

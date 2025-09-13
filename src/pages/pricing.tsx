@@ -53,13 +53,13 @@ const Pricing = () => {
     active: {
       y: 0, // Fixed to match y property
       opacity: 1,
-      transition: { duration: 1.5 },
+      transition: { duration: 1 },
     },
   };
 
   return (
-    <div className="text-white bg-background">
-      <SideMenu/>
+    <div className="text-white bg-background max_width">
+      <SideMenu />
       <section
         style={{
           backgroundImage: `url(${BackgroundImage})`,
@@ -68,14 +68,14 @@ const Pricing = () => {
         }}
       >
         <Header />
-        <div className="center gap-6 flex-col max_width">
+        <div className="center gap-6 flex-col ">
           <motion.div
             variants={variant}
             initial="inactive"
             whileInView={"active"}
             viewport={{ once: true }}
           >
-            <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
+            <div className="center mt-10 gap-1 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
               <img src={priceTag} alt="how it works icon" />
               <p className="md:text-lg text-sm font-semibold">Pricing Plans</p>
             </div>
@@ -128,7 +128,7 @@ const Pricing = () => {
               key={index}
               className={`${
                 plan.name === "Team" ? "border-primary" : "border-transparent"
-              } flex min-h-130 md:min-h-167.5 hover:border-primary border-5 duration-500 flex-col pb-8 items-start flex-1 justify-between w-full min-w-xs p-6 m-2 bg-[#292929] rounded`}
+              } flex hover:border-primary border-5 duration-500 flex-col pb-8 items-start flex-1 justify-between w-full md:min-w-xs mi-h-[470px] min-w-[250px] md:p-6 p-4 m-2 bg-[#292929] rounded`}
             >
               <div>
                 <div className="flex items-center w-full justify-between">
@@ -146,7 +146,7 @@ const Pricing = () => {
                 </p>
                 <ul className="list-disc list-inside mb-6 space-y-2">
                   {plan.features.map((feature, idx) => (
-                    <li key={idx} className="text-[22px] flex gap-2">
+                    <li key={idx} className="md:text-[22px] text-xs flex gap-2">
                       <img src={checkmark} alt="checkmark icon" />
                       {feature}
                     </li>
@@ -154,13 +154,13 @@ const Pricing = () => {
                 </ul>
               </div>
               <div className="w-full">
-                <p className="text-[40px] font-semibold mb-4">
+                <p className="md:text-[40px] text-[26px] font-semibold mb-4">
                   {plan.price} /
                   <span className="text-[24px] font-normal text-secondary-foreground">
                     month
                   </span>
                 </p>
-                <Button className="h-20">Choose Plan</Button>
+                <Button className="md:h-20 h-15">Choose Plann</Button>
               </div>
             </motion.div>
           ))}
@@ -168,27 +168,27 @@ const Pricing = () => {
       </section>
 
       <section>
-        <div className="max_width">
+        <div className="">
           <div
             style={{
               backgroundImage: `url(${backgroundImage})`,
               backgroundPosition: "center",
               backgroundSize: "cover",
             }}
-            className="rounded md:pl-10 pl-6 pt-6 md:pt-10 flex flex-wrap items-center h-max bg-primary justify-between"
+            className="rounded md:pl-10 pt-5 pl-6  flex flex-wrap flex-col md:flex-row items-center h-max bg-primary justify-between"
           >
-            <div className="flex md:min-w-[450px] flex-1 pb-5 w-full max-w-[720px] flex-col h-full gap-10">
+            <div className="flex md:min-w-[450px] w-full flex-1 max-w-[720px] pr-5 flex-col h-full gap-4 md:pb-5 md:gap-10">
               <motion.div
                 variants={variant}
                 initial="inactive"
                 whileInView={"active"}
                 viewport={{ once: true }}
-                className="flex flex-col gap-4"
+                className="flex flex-col gap-2"
               >
-                <p className="text-[40px] font-bold leading-[100%]">
+                <p className="md:text-[40px] text-[20px] font-bold leading-[100%]">
                   Start your free trial today. No credit card required.
                 </p>
-                <p className="text-[24px] leading-[100%] text-secondary-foreground">
+                <p className="md:text-[24px] text-sm text-secondary-foreground">
                   Find the plan that grows with you. Whether you’re just
                   starting out or scaling fast, Kudiline gives you the
                   flexibility, tools, and support you need to succeed.
@@ -202,7 +202,7 @@ const Pricing = () => {
                 viewport={{ once: true }}
                 className="flex gap-5 items-start justify-start"
               >
-                <Button className="bg-white hover:bg-emerald-100 text-foreground">
+                <Button className="bg-white hover:bg-emerald-100 max-w-[209px] md:max-w-[350px] text-foreground">
                   Get Started For Free
                 </Button>
               </motion.div>
@@ -213,12 +213,12 @@ const Pricing = () => {
               initial="inactive"
               whileInView={"active"}
               viewport={{ once: true }}
-              className="md:min-w-[250px] flex justify-end items-end h-full w-full"
+              className="md:min-w-[250px] flex-1 flex justify-end items-end h-full w-full"
             >
               <img
                 src={manOnPc}
                 alt="get kudiline image"
-                className="w-full max-w-[393px]"
+                className="w-full md:max-w-[503px] max-w-40 "
               />
             </motion.div>
           </div>

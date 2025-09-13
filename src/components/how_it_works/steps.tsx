@@ -56,64 +56,62 @@ const Steps = () => {
   return (
     <div className="center gap-4 flex-col max_width">
       <motion.div
-          variants={variant}
-          initial="inactive"
-          whileInView={"active"}
-          viewport={{ once: true }}
-        >
-      <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
-        <img src={personWalking} alt="how it works icon" />
-        <p className="md:text-lg text-sm font-semibold">Kudiline Steps</p>
-      </div>
-        </motion.div>
+        variants={variant}
+        initial="inactive"
+        whileInView={"active"}
+        viewport={{ once: true }}
+      >
+        <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
+          <img src={personWalking} alt="how it works icon" />
+          <p className="md:text-lg text-sm font-semibold">Kudiline Steps</p>
+        </div>
+      </motion.div>
 
-      <div className="grid-cols-1 xlarge:grid-cols-5 text-[#0E0E0E] grid items-start w-full  md:gap-3 flex-wrap justify-end">
+      <div className="grid-cols-2 medium:grid-cols-5 text-[#0E0E0E] flex md:grid items-start w-full fle-col gap-3 flex-wrap justify-end">
         {steps.map((step, index) => (
-          
-        <motion.div
-          variants={variant}
-          initial="inactive"
-          whileInView={"active"}
-          viewport={{ once: true }}
-          className="mt-4"
-        >
-
-          <div
+          <motion.div
+            variants={variant}
+            initial="inactive"
+            whileInView={"active"}
+            viewport={{ once: true }}
             className={`rounded-[30px] w-[100%] md:p-6 p-3 md:min-h-[409px] h-full ${
-              step.span === 2 ? "col-span-3" : "col-span-2"
+              step.span === 2 ? "medium:col-span-3" : "medium:col-span-2"
             }`}
             style={{ backgroundColor: step.boxColor }}
-            >
-            <div
-              className="center text-[white] text-3xl font-bold rounded-full w-14 h-14"
-              style={{ backgroundColor: step.iconColor }}
+          >
+            <div className="h-full" >
+              <div
+                className="center text-[white] text-xl medium:text-3xl font-bold rounded-full md:w-14 md:h-14 h-10 w-10"
+                style={{ backgroundColor: step.iconColor }}
               >
-              {index + 1}
-            </div>
-
-            <div
-              className={`flex flex-col xxs:flex-row relative py-4 items-end justify-between ${
-                step.span === 2 ? "" : ""
-              }`}
-              >
-              <div className="h-full">
-                <p className="text-xl font-semibold leading-10">{step.title}</p>
-
-                <p className="md:text-lg text-sm text-foreground">
-                  {step.desc}
-                </p>
+                {index + 1}
               </div>
 
-              <div className="flex items-center justify-center w-full">
-                <img
-                  src={step.icon}
-                  alt=""
-                  className=" relative w-[130px] md:w-[221px] object-cover max-w-[221px]"
+              <div
+                className={`flex flex-col xlarge:flex-row relative py-4 medium:gap-0 gap-5 box-border items-end justify-end h-[90%]${
+                  step.span === 2 ? "" : ""
+                }`}
+              >
+                <div className="h-full">
+                  <p className="text-xl font-semibold leading-10">
+                    {step.title}
+                  </p>
+
+                  <p className="md:text-base   text-sm text-foreground">
+                    {step.desc}
+                  </p>
+                </div>
+
+                <div className="flex items-end relative h-max justify-end w-full">
+                  <img
+                    src={step.icon}
+                    alt=""
+                    className="  w-[130px] md:w-[221px] object-cover max-w-[221px]"
                   />
+                </div>
               </div>
             </div>
-          </div>
-                  </motion.div>
+          </motion.div>
         ))}
       </div>
     </div>

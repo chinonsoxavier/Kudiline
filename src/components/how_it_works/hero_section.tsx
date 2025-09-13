@@ -36,7 +36,7 @@ const HeroSection = () => {
       className="overflow-hidden"
     >
       <Header />
-      <div className="center gap-6 flex-col max_width">
+      <div className="center mt-10 gap-6 flex-col ">
         <motion.div
           variants={variant}
           initial="inactive"
@@ -83,7 +83,7 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      <div className="flex max_width flex-col md:flex-row flex-wrap items-end py-10 justify-center gap-5">
+      <div className="flex  flex-col md:flex-row flex-wrap items-end py-10 justify-center gap-5">
 
              <motion.div
           variants={variant}
@@ -185,7 +185,7 @@ const HeroSection = () => {
             src={masterCard}
             alt="master card"
             className="w-full object-contain max-w-[479px]"
-          />hh  
+          />
         </motion.div>
 
         <motion.div

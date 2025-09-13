@@ -26,7 +26,7 @@ const HeroSection = () => {
       }}
     >
       <Header />
-      <div className="center gap-6 flex-col max_width">
+      <div className="center gap-6 flex-col">
 
             <motion.div
         variants={variant}
@@ -35,7 +35,7 @@ const HeroSection = () => {
         viewport={{ once: true }}
       >
 
-        <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
+        <div className="center gap-1 mt-10 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
           <img src={landLine} alt="how it works icon" />
           <p className="md:text-lg text-sm font-semibold">Contact Us</p>
         </div>
@@ -49,8 +49,8 @@ const HeroSection = () => {
       className="space-y-4"
       >
 
-        <p className="md:text-[45px] text-[26px] text leading-[100%] tracking-tight font-bold">
-          We’d Love to{" "}
+        <p className="md:text-[45px] text-[26px] text leading-[100%] tracking-tight text-center font-bold">
+          We’d Love to
           <span className="pacifico font-normal text-primary">Hear</span> From
           You
         </p>

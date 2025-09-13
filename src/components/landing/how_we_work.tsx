@@ -14,7 +14,7 @@ const HowWeWork = () => {
         opacity: 0,
       },
       active: {
-        y: 0, // Fixed to match y property
+        y: 0,
         opacity: 1,
         transition: { duration: 1.5 },
       },

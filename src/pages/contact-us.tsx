@@ -7,7 +7,7 @@ import SideMenu from "@/components/layouts/sidemenu";
 
 const ContactUs = () => {
   return (
-    <div className="text-white bg-background">
+    <div className="text-white bg-background max_width">
           <section>
             <SideMenu/>
               <HeroSection/>

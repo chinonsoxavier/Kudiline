@@ -51,15 +51,15 @@ const HeroComponent = () => {
         <Header />
       </div>
 
-      <div className="flex maxwidth w-full relative flex-wrap gap-20 items-center justify-between">
-        <div className="flex gap-5 flex-col mr-10 items-center text-center lg:text-left lg:items-start md:min-w-[650px] flex-1 justify-center">
+      <div className="flex max_width w-full relative flex-wrap gap-20 items-center justify-center">
+        <div className="flex gap-5 w-full flex-col md:mr-10 items-center text-center lg:text-left lg:items-start md:min-w-[650px] flex-1 justify-center">
           <motion.div
             variants={variants1}
             initial="inactive"
             whileInView={"active"}
             viewport={{ once: true }} // Changed to animate for immediate effect
           >
-            <div className="center gap-1 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
+            <div className="center mt-10 gap-1 rounded-full border-[0.5px] border-primary/5 glow-shadow py-1 px-4">
               <img src={lightening} alt="lightening" />
               <p className="md:text-lg text-sm font-semibold">
                 Instant setup with KudiCall
@@ -72,8 +72,9 @@ const HeroComponent = () => {
             initial="inactive"
             whileInView={"active"}
             viewport={{ once: true }}
+            className=""
           >
-            <p className="md:text-[53px] text-3xl leading-15 tracking-tight font-bold">
+            <p className="md:text-[53px] max-w-3xl text-3xl tracking-tight leading-full font-bold">
               Own a Business Phone Number That Works Online,
               <br />
               <span className="pacifico tra tracking-tight text-primary">
@@ -88,7 +89,7 @@ const HeroComponent = () => {
             whileInView={"active"}
             viewport={{ once: true }}
           >
-            <p className="md:text-2xl text-[#C8C8C8]">
+            <p className="md:text-2xl max-w-3xl text-[#C8C8C8]">
               Connect an AI assistant. Connect your team. Manage everything for
               free inside the KudiCall app.
             </p>
@@ -101,15 +102,17 @@ const HeroComponent = () => {
             whileInView={"active"}
             viewport={{ once: true }} // Changed to animate for immediate effect
           >
-            <div className="grid grid-cols-2 h-22 md:h-25 justify-between w-full px3 gp-5 rounded-full bg-[#292929]">
-              <div className="flex h-full w-full flex-col flex-1 pl-2 md:pl-12 items-start justify-center">
+            <div className="grid grid-cols-2 h-22 md:h-20 justify-between w-full px-2 max-w-3xl rounded-full bg-[#292929]">
+              <div className="flex h-full w-full flex-col flex-1 pl-2 md:pl-5  items-start justify-center">
                 <div className="flex gap-2 items-start justify-start">
                   <Search className="w-6.5 h-6.5" />
                   <div className="flex items-start justify-start flex-col">
                     <p className="md:text-base text-xs whitespace-nowrap text-[rgba(207,207,207,1)]">
                       Search for your business number
                     </p>
-                    <p className="font-semibold text-basemd:text-xl">eg: +2348194672015</p>
+                    <p className="font-semibold text-basemd:text-xl">
+                      eg: +2348194672015
+                    </p>
                   </div>
                 </div>
               </div>
@@ -137,7 +140,10 @@ const HeroComponent = () => {
                 Try KudiCall
               </Button>
 
-              <Button onClick={() => navigate("/pricing")} className="h-16 md:h-20">
+              <Button
+                onClick={() => navigate("/pricing")}
+                className="lg:max-w-xs h-16 md:h-20"
+              >
                 Get a Number
               </Button>
             </div>
@@ -152,31 +158,30 @@ const HeroComponent = () => {
             whileInView={"active"}
             viewport={{ once: true }} // Changed to animate for immediate effect
           >
-            <div className="flex relative right-30 items-start">
+            <div className="flex relative right-5 md:right-30 items-start">
               <img
                 src={Phone1}
-                className="z-10 w-full min-w-65 max-w-81"
+                className="z-10 w-full md:min-w-65 max-w-53 md:max-w-81"
                 alt="phone1"
               />
               <img
                 src={Phone4}
-                className="object-cover pulse absolute max-w-15 top-0 -right-20 w-full"
+                className="object-cover pulse absolute md:max-w-15 max-w-12.5 left-60 top-0 -right-0 w-full"
                 alt="phone4"
               />
             </div>
 
-
-          <div className="flex relative z-10 items-start">
-            <img
-              src={Phone3}
-              className="relative w-full max-w-58.5 right-50"
-              alt="phone3"
+            <div className="flex relative z-10 items-start">
+              <img
+                src={Phone3}
+                className="relative w-full -left-15 max-w-39 md:max-w-58.5 md:-left-40"
+                alt="phone3"
               />
-          </div>
-          <img
-            src={Phone2}
-            className="absolute top-20 z-0 right-2 w-min max-w-81"
-            alt="phone2"
+            </div>
+            <img
+              src={Phone2}
+              className="absolute top-20 z-0 left-30 md:left-30 max-w-53 md:max-w-81"
+              alt="phone2"
             />
           </motion.div>
         </div>

@@ -8,6 +8,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import { Button } from "../ui/button";
 import arrowDown from "@/assets/icons/arrow-down-icon.svg";
 import { useEffect } from "react";
+import Header from "./header";
 
 const SideMenu = () => {
   const { sideMenuOpen,closeSideMrnu } = useLandingStore();
@@ -20,11 +21,13 @@ const location = useLocation();
 
   return (
     <div
-      className={`fixed z-20 bg-background top-0 overflow-hidden duration-500 w-full ${
+      className={`fixed max_width z-20 bg-background top-0 overflow-hidden duration-500 w-full ${
         sideMenuOpen ? "h-dvh" : "h-0"
       } `}
     >
-      <div className="flex flex-col gap-8 items-center justify relative top-50 px-8 w-full">
+      <Header/>
+  
+      <div className="flex flex-col gap-8 items-center justify-start x-2 w-full">
         <NavLink className="w-full" to="/">
           <div className="flex items-center justify-between w-full">
             <div className="flex items-center justify-start gap-2">
@@ -91,7 +94,7 @@ const location = useLocation();
       </div>
 
       <div className="flex px-4 items-center justify-center sm:hidden top-90 relative">
-        <Button value="outline" className="w-full rounded-full">
+        <Button value="outline" className="w-full rounded-1000">
           Download KudiCall App
           <img src={arrowDown} alt="arrow down icon" className="" />
         </Button>
