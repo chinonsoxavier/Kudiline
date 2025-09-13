@@ -53,7 +53,7 @@ const GetKudiline = () => {
               viewport={{ once: true }}
               className="w-full"
             >
-              <Button className="bg-white max-w-[209px] hover:bg-emerald-100 text-foreground">
+              <Button className="bg-white md:max-w-full max-w-[209px] hover:bg-emerald-100 text-foreground">
                 Try KudiCall App
               </Button>
             </motion.div>
@@ -65,7 +65,7 @@ const GetKudiline = () => {
               viewport={{ once: true }}
               className="w-full"
             >
-              <Button className="bg-foreground hover:bg-background text-white max-w-[209px]">
+              <Button className="bg-foreground md:max-w-full hover:bg-background text-white max-w-[209px]">
                 Get My Number Now
               </Button>
             </motion.div>

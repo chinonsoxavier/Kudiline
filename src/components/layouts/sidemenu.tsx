@@ -21,13 +21,13 @@ const location = useLocation();
 
   return (
     <div
-      className={`fixed max_width z-20 bg-background top-0 overflow-hidden duration-500 w-full ${
+      className={`fixed inset-0 max_width z-20 bg-background top-0 overflow-hidden duration-800 w-full ${
         sideMenuOpen ? "h-dvh" : "h-0"
       } `}
     >
       <Header/>
   
-      <div className="flex flex-col gap-8 items-center justify-start x-2 w-full">
+      <div className="flex flex-col relative top-10 gap-8 items-center justify-start p-2 w-full">
         <NavLink className="w-full" to="/">
           <div className="flex items-center justify-between w-full">
             <div className="flex items-center justify-start gap-2">
@@ -93,7 +93,7 @@ const location = useLocation();
         </NavLink>
       </div>
 
-      <div className="flex px-4 items-center justify-center sm:hidden top-90 relative">
+      <div className="flex px-4 items-center justify-center sm:hidden top-70 relative">
         <Button value="outline" className="w-full rounded-1000">
           Download KudiCall App
           <img src={arrowDown} alt="arrow down icon" className="" />

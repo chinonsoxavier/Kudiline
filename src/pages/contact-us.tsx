@@ -7,7 +7,9 @@ import SideMenu from "@/components/layouts/sidemenu";
 
 const ContactUs = () => {
   return (
-    <div className="text-white bg-background max_width">
+    <div className="text-white bg-background">
+      <main className="max_width" >
+
           <section>
             <SideMenu/>
               <HeroSection/>
@@ -28,6 +30,8 @@ const ContactUs = () => {
           <section className="" >
               <Footer/>
           </section>
+
+          </main>
     </div>
   );
 };

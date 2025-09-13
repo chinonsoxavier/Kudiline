@@ -75,7 +75,7 @@ const WhyUseUs = () => {
         whileInView={"active"}
         viewport={{ once: true }} // Changed to animate for immediate effect
       >
-        <p className="md:text-[45px] text-[26px] text leading-[100%] tracking-tight font-bold">
+        <p className="md:text-[45px] text-[26px] text leading-[100%] tracking-tight text-center font-bold">
           One Number. Every Sale. No Missed Calls.
         </p>
       </motion.div>
@@ -97,7 +97,7 @@ const WhyUseUs = () => {
         {features.map((feature, index) => (
           <motion.div
             key={index}
-            className="flex lg:min-h-70 flex-col pb-8 items-start flex-1 w-full min-w-xs p-4 m-2 bg-[#292929] rounded-2xl"
+            className="flex lg:min-h-70 flex-col pb-8 items-start flex-1 w-full min-w-full xs:min-w-xs p-4 m-2 bg-[#292929] rounded-2xl"
             variants={variants1}
             initial="inactive"
             whileInView={"active"}

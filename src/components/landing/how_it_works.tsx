@@ -65,7 +65,7 @@ const HowItWorks = () => {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 medium:grid-cols-2 text-[#0E0E0E] flex-col md:flex-row items-stretch w-full gap-8 flex-wrap justify-end">
+      <div className="grid grid-cols-1 medium:grid-cols-2 text-[#0E0E0E] flex-col md:flex-row items-stretch w-full gap-4  md:gap-8 flex-wrap justify-end">
         {steps.map((step, index) => (
           <motion.div
             className="rounded-[30px] w-full p-6 h-full flex-1"
@@ -75,29 +75,35 @@ const HowItWorks = () => {
             whileInView={"active"}
             viewport={{ once: true }}
           >
-            <div
-              className="center text-[white] text-[19px] sm:text-[34px] font-bold rounded-full w-10 h-10 sm:w-17 sm:h-17"
-              style={{ backgroundColor: step.iconColor }}
-            >
-              {index + 1}
-            </div>
-
-            <div className="flex relative py-4 items-start justify-between">
-              <div className="h-full space-y-2">
-                <p className="sm:text-[32px] text-xl font-semibold leading-full">
-                  {step.title}
-                </p>
-
-                <p className="sm:text-2xl text-sm text-foreground">
-                  {step.desc}
-                </p>
+            <div className="h-full">
+              <div
+                className="center text-[white] text-xl medium:text-3xl font-bold rounded-full md:w-14 md:h-14 h-10 w-10"
+                style={{ backgroundColor: step.iconColor }}
+              >
+                {index + 1}
               </div>
 
-              <img
-                src={step.icon}
-                alt="steps image"
-                className="relative w-full top-10 object-contain max-w-[221px] right-0"
-              />
+              <div
+                className={`flex flex-col xlarge:flex-row relative py-4 medium:gap-0 gap-5 box-border items-start justify-end h-[90%]`}
+              >
+                <div className="h-full">
+                  <p className="text-xl font-semibold leading-10">
+                    {step.title}
+                  </p>
+
+                  <p className="md:text-base   text-sm text-foreground">
+                    {step.desc}
+                  </p>
+                </div>
+
+                <div className="flex items-end relative h-max justify-end w-full">
+                  <img
+                    src={step.icon}
+                    alt=""
+                    className="  w-[130px] md:w-[221px] object-cover max-w-[221px]"
+                  />
+                </div>
+              </div>
             </div>
           </motion.div>
         ))}
@@ -109,7 +115,12 @@ const HowItWorks = () => {
         viewport={{ once: true }}
         className="w-full center"
       >
-        <Button onClick={()=>navigate("/pricing")} className="max-w-[525px] mt-8">Get Premium Number</Button>
+        <Button
+          onClick={() => navigate("/pricing")}
+          className="max-w-[525px] mt-8"
+        >
+          Get Premium Number
+        </Button>
       </motion.div>
     </div>
   );

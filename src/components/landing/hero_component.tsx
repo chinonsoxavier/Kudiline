@@ -161,12 +161,12 @@ const HeroComponent = () => {
             <div className="flex relative right-5 md:right-30 items-start">
               <img
                 src={Phone1}
-                className="z-10 w-full md:min-w-65 max-w-53 md:max-w-81"
+                className="z-10 w-full wiggle md:min-w-65 max-w-53 md:max-w-81"
                 alt="phone1"
               />
               <img
                 src={Phone4}
-                className="object-cover pulse absolute md:max-w-15 max-w-12.5 left-60 top-0 -right-0 w-full"
+                className="object-cover pulse absolute md:max-w-15 max-w-12.5 left-60 md:left-80 top-0 -right-0 w-full"
                 alt="phone4"
               />
             </div>
@@ -174,13 +174,13 @@ const HeroComponent = () => {
             <div className="flex relative z-10 items-start">
               <img
                 src={Phone3}
-                className="relative w-full -left-15 max-w-39 md:max-w-58.5 md:-left-40"
+                className="relative wiggle w-full -left-15 max-w-39 md:max-w-58.5 md:-left-40"
                 alt="phone3"
               />
             </div>
             <img
               src={Phone2}
-              className="absolute top-20 z-0 left-30 md:left-30 max-w-53 md:max-w-81"
+              className="absolute wiggle top-20 z-0 left-30 md:left-30 max-w-53 md:max-w-81"
               alt="phone2"
             />
           </motion.div>

@@ -51,7 +51,7 @@ const HeroSection = () => {
 
         <p className="md:text-[45px] text-[26px] text leading-[100%] tracking-tight text-center font-bold">
           We’d Love to
-          <span className="pacifico font-normal text-primary">Hear</span> From
+          <span className="pacifico font-normal text-primary"> Hear </span> From
           You
         </p>
         <p className="md:text-xl text-[#C8C8C8] text-center max-w-xl">

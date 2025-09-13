@@ -80,7 +80,7 @@ const TermsOfUse = () => {
   ];
 
   return (
-    <div className="text-[#FFFFFF] bg-background relative">
+    <div className="text-[#FFFFFF] max_width bg-background relative">
       <section>
         <div
           style={{
@@ -118,14 +118,14 @@ const TermsOfUse = () => {
               <div className="space-y-4">
                 {terms.map((term, index) => (
                   <div key={index} className="">
-                    <span className="md:text-[32px] text-2xl mb-0 py-0 font-semibold">
+                    <span className="md:text-[32px] text-xl mb-0 py-0 font-semibold">
                       {index + 1}. {term.title}
                     </span>
 
                     {term.details.map((details, index) => (
                       <div key={index} className="flex gap-1 items-start">
-                        <div className="w-1.5 h-1.5 mt-4 rounded-full bg-white"></div>
-                        <p className="md:text-[26px] text-xl mt-0 text-primary-foreground font-semibold">
+                        <div className="min-w-1.5 min-h-1.5 w-1.5 h-1.5 mt-2 rounded-full bg-white"></div>
+                        <p className="md:text-[26px] text-base mt-0 text-primary-foreground font-semibold">
                           {details}
                         </p>
                       </div>

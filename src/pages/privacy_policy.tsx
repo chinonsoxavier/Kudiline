@@ -76,7 +76,7 @@ const PrivacyPolicy = () => {
   ];
 
   return (
-    <div className="text-[#FFFFFF] bg-background">
+    <div className="text-[#FFFFFF] max_width bg-background">
       <section>
         <div
           style={{
@@ -94,7 +94,7 @@ const PrivacyPolicy = () => {
               Policy
             </p>
 
-            <p className="text-xl text-[#C8C8C8] text-center max-w-xl">
+            <p className="md:text-xl text-[#C8C8C8] text-center max-w-xl">
               our privacy matters to us. This Privacy Policy explains how
               Kudiline collects, uses, and protects your personal information.
               Our goal is to ensure transparency and give you control over your
@@ -102,7 +102,7 @@ const PrivacyPolicy = () => {
             </p>
 
             <div className="space-y-6">
-              <p className="font-medium md:text-[26px]">
+              <p className="font-medium text-base md:text-[26px]">
                 At Kudiline, your privacy is our priority. This Privacy Policy
                 explains how we collect, use, share, and protect the personal
                 information you provide when using our platform. By accessing or
@@ -115,17 +115,17 @@ const PrivacyPolicy = () => {
               <div className="space-y-4">
                 {terms.map((term, index) => (
                   <div key={index} className="">
-                    <span className="md:text-[32px] text-2xl mb-0 py-0 font-semibold">
+                    <span className="md:text-[32px] text-xl mb-0 py-0 font-semibold">
                       {index + 1}. {term.title}
                     </span>
-                    <p className="md:text-[26px] text-xl mt-0 text-primary-foreground font-semibold">
+                    <p className="md:text-[26px] text-base mt-0 text-primary-foreground font-semibold">
                       {term?.info}
                     </p>
                     {term.details &&
                       term.details.map((details, index) => (
                         <div key={index} className="flex gap-1 items-start">
-                          <div className="w-1.5 h-1.5 mt-4 rounded-full bg-white"></div>
-                          <p className="md:text-[26px] text-xl mt-0 text-primary-foreground font-semibold">
+                          <div className="min-w-1.5 min-h-1.5 h-1.5 w-1.5 mt-2 rounded-full bg-white"></div>
+                          <p className="md:text-[26px] text-base mt-0 text-primary-foreground font-semibold">
                             {details}
                           </p>
                         </div>
