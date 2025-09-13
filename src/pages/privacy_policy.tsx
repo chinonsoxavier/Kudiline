@@ -76,30 +76,34 @@ const PrivacyPolicy = () => {
   ];
 
   return (
-    <div className="text-[#FFFFFF] max_width bg-background">
-      <section>
-        <div
+    <div className="text-[#FFFFFF] bg-background">
+      <main className="max_width">
+        <section
           style={{
             backgroundImage: `url(${BackgroundImage})`,
             backgroundPosition: "center",
             backgroundSize: "cover",
           }}
         >
-          <Header />
-          <SideMenu/>
-          <div className="center py-16 gap-6 flex-col ">
-            <p className="md:text-[45px] text-[26px] text leading-[100%] tracking-tight font-bold">
-              Privacy
-              <span className="pacifico font-normal text-primary"> Use </span>
-              Policy
-            </p>
+          <div>
+            <Header />
+            <SideMenu />
+            <div className="center py-10 gap-6 flex-col ">
+              <p className="md:text-[45px] text-[26px] text leading-[100%] tracking-tight font-bold">
+                Privacy
+                <span className="pacifico font-normal text-primary"> Use </span>
+                Policy
+              </p>
 
-            <p className="md:text-xl text-[#C8C8C8] text-center max-w-xl">
-              our privacy matters to us. This Privacy Policy explains how
-              Kudiline collects, uses, and protects your personal information.
-              Our goal is to ensure transparency and give you control over your
-              data.
-            </p>
+              <p className="md:text-xl text-[#C8C8C8] text-center max-w-xl">
+                our privacy matters to us. This Privacy Policy explains how
+                Kudiline collects, uses, and protects your personal information.
+                Our goal is to ensure transparency and give you control over
+                your data.
+              </p>
+            </div>
+            </div>
+        </section>
 
             <div className="space-y-6">
               <p className="font-medium text-base md:text-[26px]">
@@ -138,10 +142,7 @@ const PrivacyPolicy = () => {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
+      </main>
       <section>
         <Footer />
       </section>

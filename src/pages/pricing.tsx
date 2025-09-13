@@ -234,10 +234,10 @@ const Pricing = () => {
           </div>
         </section>
 
-        <section className="py-20">
+      </main>
+        <section className="">
           <Footer />
         </section>
-      </main>
     </div>
   );
 };

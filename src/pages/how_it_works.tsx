@@ -22,10 +22,10 @@ const HowItWorks = () => {
           <GetKudiline />
         </section>
 
+        </main>
         <section className="">
           <Footer />
         </section>
-        </main>
       </div>
     );
 }

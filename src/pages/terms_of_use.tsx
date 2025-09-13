@@ -80,15 +80,14 @@ const TermsOfUse = () => {
   ];
 
   return (
-    <div className="text-[#FFFFFF] max_width bg-background relative">
-      <section>
-        <div
-          style={{
+    <div className="text-[#FFFFFF] bg-background relative">
+      <main className="max_width" >
+      <section   style={{
             backgroundImage: `url(${BackgroundImage})`,
             backgroundPosition: "center",
             backgroundSize: "cover",
-          }}
-        >
+          }}>
+            <div>
           <Header />
           <SideMenu/>
           <div className="center py-16 gap-6 flex-col max_width">
@@ -103,6 +102,10 @@ const TermsOfUse = () => {
               to comply with and be bound by these Terms of Use. Please read
               them carefully before using our services.
             </p>
+
+            </div>
+            </div>
+            </section>
 
             <div className="space-y-6">
               <p className="font-medium text-base md:text-[26px]">
@@ -134,10 +137,7 @@ const TermsOfUse = () => {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
+</main>
       <section>
         <Footer />
       </section>
